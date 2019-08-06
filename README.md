@@ -1,7 +1,7 @@
 # Генератор описания компонентов дизайн-системы INSPARK
 Генератор для сайта с документацией дизайн-системы Inspark.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.0.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.0.
 
 ## Цели проекта
 - систематизировать и упорядочить компоненты системы
