@@ -1,7 +1,6 @@
-import {storiesOf} from '@storybook/angular';
-import {action} from '@storybook/addon-actions';
-import {linkTo} from '@storybook/addon-links';
-import ButtonComponent from './button.components';
+import { storiesOf } from '@storybook/angular';
+import { linkTo } from '@storybook/addon-links';
+import ButtonComponent from './button.component';
 
 storiesOf('Inspark Button', module)
   .add('default', () => ({
@@ -9,7 +8,7 @@ storiesOf('Inspark Button', module)
     props: {
       text: 'Go to Welcome Story 123',
       class: '',
-      onClick: linkTo('Inspark'),
+      onClick: linkTo('Welcome'),
     },
   }))
   .add('primary', () => ({
@@ -17,7 +16,7 @@ storiesOf('Inspark Button', module)
       props: {
         text: 'Go to Welcome Story 123',
         class: 'c-btn_primary',
-        onClick: linkTo('Inspark'),
+        onClick: linkTo('Welcome'),
       },
     }),
     {notes: 'Button for primary action'})
@@ -26,6 +25,6 @@ storiesOf('Inspark Button', module)
     props: {
       text: 'Go to Welcome Story 123',
       class: 'c-btn_secondary',
-      onClick: linkTo('Inspark'),
+      onClick: linkTo('Welcome'),
     },
   }));
