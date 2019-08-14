@@ -1,13 +1,31 @@
-import { storiesOf } from '@storybook/angular';
-import { action } from '@storybook/addon-actions';
-import { linkTo } from '@storybook/addon-links';
+import {storiesOf} from '@storybook/angular';
+import {action} from '@storybook/addon-actions';
+import {linkTo} from '@storybook/addon-links';
+import ButtonComponent from './button.components';
 
-import { Button } from '@storybook/angular/demo';
-
-storiesOf('Inspark Button', module).add('button with link to another story 123', () => ({
-  component: Button,
-  props: {
-    text: 'Go to Welcome Story 123',
-    onClick: linkTo('Inspark'),
-  },
-}));
+storiesOf('Inspark Button', module)
+  .add('default', () => ({
+    component: ButtonComponent,
+    props: {
+      text: 'Go to Welcome Story 123',
+      class: '',
+      onClick: linkTo('Inspark'),
+    },
+  }))
+  .add('primary', () => ({
+      component: ButtonComponent,
+      props: {
+        text: 'Go to Welcome Story 123',
+        class: 'c-btn_primary',
+        onClick: linkTo('Inspark'),
+      },
+    }),
+    {notes: 'Button for primary action'})
+  .add('secondary', () => ({
+    component: ButtonComponent,
+    props: {
+      text: 'Go to Welcome Story 123',
+      class: 'c-btn_secondary',
+      onClick: linkTo('Inspark'),
+    },
+  }));
