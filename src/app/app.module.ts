@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import ButtonComponent from './shared/inspark-components-web/button/button.components';
+import ButtonComponent from './shared/inspark-components-web/button/button.component';
 
 @NgModule({
   declarations: [

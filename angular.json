@@ -28,7 +28,8 @@
             ],
             "stylePreprocessorOptions": {
               "includePaths": [
-                "node_modules"
+                "node_modules",
+                "src/app/shared"
               ]
             },
             "styles": [
@@ -66,7 +67,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "inspark-design-system-site-generator:build"
+            "browserTarget": "inspark-design-system-site-generator:build",
+            "port": 1337
           },
           "configurations": {
             "production": {
