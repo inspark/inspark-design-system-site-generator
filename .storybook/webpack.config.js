@@ -1,6 +1,6 @@
 module.exports = function({ config }) {
   config.module.rules.push({
-    test: /\.stories\.jsx?$/,
+    test: /\.stories\.ts?$/,
     loaders: [
       {
         loader: require.resolve('@storybook/addon-storysource/loader'),
