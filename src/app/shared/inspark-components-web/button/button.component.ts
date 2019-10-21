@@ -5,9 +5,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
   template: `
     <button class="c-btn {{ class }}" (click)="onClick.emit($event)">{{ text }}</button>
   `,
-  styleUrls: [
-    './button.component.scss'
-  ],
+  styleUrls: ['./button.component.scss'],
 })
 export default class ButtonComponent implements OnInit {
   @Input()

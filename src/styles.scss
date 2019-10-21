@@ -1,6 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
-$FontPathOpenSans: "~node_modules/@inspark/components-web/src/assets/fonts/open-sans";
-$FontPathPrimeicons: "~node_modules/@inspark/components-web/src/assets/fonts/primeicons";
-@import "~node_modules/@inspark/components-web/src/main";
-@import "~node_modules/@inspark/components-web/src/theme/light";
-@import "~node_modules/@inspark/components-web/src/theme/contrast";
+
+$FontPathOpenSans: "node_modules/@inspark/components-web/src/assets/fonts/open-sans";
+$FontPathPrimeicons: "node_modules/@inspark/components-web/src/assets/fonts/primeicons";
+
+@import "@inspark/components-web/src/main";
+@import "@inspark/components-web/src/theme/light";
+@import "@inspark/components-web/src/theme/contrast";
+
+storybook-dynamic-app-root {
+  display: inline-block;
+}

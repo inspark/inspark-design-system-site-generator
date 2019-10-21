@@ -1,5 +1,3 @@
-//@import '@inspark/components-web/src/base/variables';
-//@import '@inspark/components-web/src/typography/variables';
-//@import "@inspark/components-web/src/box-shadow/mixins";
-//@import '@inspark/components-web/src/button/ids-button';
-// todo: поправить зависимости для кнопки в библиотеке стилей
+:host {
+  display: inline-block;
+}
