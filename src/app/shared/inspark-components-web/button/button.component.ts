@@ -3,7 +3,10 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 @Component({
   selector: 'app-inspark-button-component',
   template: `
-    <button class="c-btn {{ class }}" [attr.disabled]="disabled ? '' : null"  (click)="onClick.emit($event)">{{ text }}</button>
+    <button class="c-btn {{ class }}" 
+            [attr.disabled]="disabled ? '' : null"
+            (click)="onClick.emit($event)" 
+            style="margin-right: 0;">{{ text }}</button>
   `,
   styleUrls: ['./button.component.scss'],
 })

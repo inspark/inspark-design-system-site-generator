@@ -10,7 +10,8 @@
     "e2e": "ng e2e",
     "storybook": "start-storybook -p 6006",
     "storybook debug webpack": "start-storybook --debug-webpack -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "story2sketch": "story2sketch"
   },
   "private": true,
   "dependencies": {

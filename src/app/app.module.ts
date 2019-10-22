@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import ButtonComponent from './shared/inspark-components-web/button/button.component';
+import LinkComponent from './shared/inspark-components-web/link/link.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ButtonComponent
+    ButtonComponent,
+    LinkComponent
   ],
   imports: [
     BrowserModule,
