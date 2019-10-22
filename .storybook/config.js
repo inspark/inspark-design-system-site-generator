@@ -27,10 +27,5 @@ addParameters({
 });
 
 // automatically import all files ending in *.stories.ts
-const req = require.context('../src', true, /\.stories\.ts$/);
+configure(require.context('../src', true, /\.stories\.[tj]s$/), module);
 
-function loadStories() {
-  req.keys().forEach(filename => req(filename));
-}
-
-configure(loadStories, module);
