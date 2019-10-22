@@ -14,7 +14,7 @@ stories.add('with a button', () => ({
   component: ButtonComponent,
   props: {
     text: text('text', 'Hello Storybook'), // The first param of the knob function has to be exactly the same as the component input.
-    state: boolean('state', false),
+    disabled: boolean('disabled', false),
   },
 }));
 
