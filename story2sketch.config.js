@@ -1,8 +1,11 @@
 module.exports = {
   url: "http://localhost:6006/iframe.html",
+  // input: "storybook-static/iframe.html",
   output: "story2sketch/stories.asketch.json",
   stories: "all",
-  layoutBy: "kind",
+  verbose: false,
+  concurrency: 1,
+  puppeteerOptions: {headless: false},
   viewports: {
     narrow: {
       width: 320,

@@ -6,7 +6,8 @@
 /out-tsc
 # Only exists if Bazel was run
 /bazel-out
-/story2sketch
+stories.asketch.json
+/storybook-static
 
 # dependencies
 /node_modules
